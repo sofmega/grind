@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class palindrome {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt(); // 12321
+        int n = sc.nextInt();
         int reversed = 0;
-            for (int i = n; i > 0; i /= 10) { // first degit
+            for (int i = n; i > 0; i /= 10) {
                 reversed = reversed * 10 + (i  % 10);
             }
                 if (n == reversed) {
@@ -15,6 +15,6 @@ public class palindrome {
                 } else {
                     System.out.println("This number is not palindrome");
                 }
-
+        sc.close();
             }
     }
